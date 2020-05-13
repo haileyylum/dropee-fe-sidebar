@@ -1,5 +1,5 @@
 // SideBar
-(function ($) {
+$(document).ready(function () {
     "use strict";
 
     var fullHeight = function () {
@@ -15,4 +15,8 @@
         $("#content").toggleClass("collapse-content");
         $("#Header").toggleClass("collapse-header");
     });
-})(jQuery);
+
+})(jQuery)
+
+
+
