@@ -156,6 +156,13 @@
     z-index: -1;
 }
 
+.custom-menu span {
+    display: block;
+    font-size: 0.7em;
+    color: #fff;
+    font-weight: bold;
+}
+
 #Header.collapse-header.affix {
     width: 100%;
 }
@@ -176,6 +183,7 @@
 #sidebar .custom-menu .btn i {
     /* margin-right: -40px; */
     font-size: 14px;
+    color: #fff;
 }
 
 #sidebar .custom-menu .btn.btn-primary {
