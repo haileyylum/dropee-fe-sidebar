@@ -1,16 +1,16 @@
 // SideBar
-(function($) {
+(function ($) {
     "use strict";
 
-    var fullHeight = function() {
+    var fullHeight = function () {
         $(".js-fullheight").css("height", $(window).height());
-        $(window).resize(function() {
+        $(window).resize(function () {
             $(".js-fullheight").css("height", $(window).height());
         });
     };
     fullHeight();
 
-    $("#sidebarCollapse").on("click", function() {
+    $("#collapse-sidebar").on("click", function () {
         $("#sidebar").toggleClass("active");
         $("#content").toggleClass("collapse-content");
         $("#Header").toggleClass("collapse-header");
