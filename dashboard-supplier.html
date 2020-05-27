@@ -51,7 +51,7 @@
         <div class="sidebar-inner">
           <a href="index.html" class="logo"><img src="images/logo.png" /></a>
 
-          <ul class="list-unstyled components mb-5">
+          <ul class="list-unstyled components mb-5 sidebar-ul">
             <li role="presentation" class="active">
               <a href="#dashboard" aria-controls="dashboard" role="tab" data-toggle="tab">Dashboard</a>
             </li>
@@ -59,7 +59,14 @@
               <a href="#sales" aria-controls="sales" role="tab" data-toggle="tab">Sales</a>
             </li>
             <li role="presentation">
-              <a href="#orders" aria-controls="orders" role="tab" data-toggle="tab">Orders</a>
+              <a id="togglesubmenu" href="#orders" aria-controls="orders" role="tab" data-toggle="tab"
+                data-target="#sidebarsub">Orders <i class="fa fa-chevron-right" id="righticon"
+                  aria-hidden="true"></i></a>
+              <ul class="submenu" id="sidebarsub" aria-labelledby="dropdownMenu2">
+                <li>New</li>
+                <li>In Progress</li>
+                <li>Completed</li>
+              </ul>
             </li>
             <li role="presentation">
               <a href="#customers" aria-controls="customers" role="tab" data-toggle="tab">Customers</a>
@@ -73,6 +80,17 @@
             <li role="presentation">
               <a href="#store" aria-controls="store" role="tab" data-toggle="tab">Store Settings</a>
             </li>
+            <li role="presentation">
+              <a id="togglesubmenu" href="#settings" aria-controls="store" role="tab" data-toggle="tab">Settings
+                <i class="fa fa-chevron-right" id="righticon" aria-hidden="true"></i>
+              </a>
+              <ul class="submenu">
+                <li>Store setting</li>
+                <li>Payment</li>
+                <li>Shipping</li>
+              </ul>
+            </li>
+
           </ul>
         </div>
       </div>
@@ -144,7 +162,7 @@
                     <div class="dropdown-menu" id="account-menu">
                       <div class="angle-up"></div>
                       <ul class="menu-links">
-                        <li><a href="">My Dashboard</a></li>
+                        <li><a href="">Retailer Jaya Dashboard</a></li>
                         <li>
                           <p>use as</p>
                         </li>
@@ -253,7 +271,7 @@
                 <div role="tabpanel" class="tab-pane active cf" id="dashboard">
                   <div class="dashboard-data cf">
                     <h2>
-                      My Dashboard
+                      Retailer Jaya Dashboard
                       <small>Unicorn Chocolate Supplies Sdn Bhd</small>
                     </h2>
                     <div class="cf row box-data-wrapper">
