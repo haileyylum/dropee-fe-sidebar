@@ -219,14 +219,17 @@ ul.submenu {
 #sidebar li ul.submenu {
   padding-left: 10px;
   display: none;
+  opacity: 0;
 }
 
 #sidebar li ul.submenu {
   padding-left: 10px;
+  transition: 0.5s;
 }
 
 #sidebar ul li.active ul.submenu {
   display: block;
+  opacity: 1;
 }
 
 #sidebar ul li a {
